@@ -1,16 +1,20 @@
 import React,{ useState } from 'react'
-
+import './index.css'
+import Banner from './components/banner'
+import Cuerpo from './components/Contenidocentral'
+import Footer from './components/Footer'
 
 export default function App() {
  
 
   return (
-    <>
-          <div>
-              <h1 >Hola aaaaaaaaaaaaa</h1>
-              
-          </div>
-    </>
+    <div className="App">
+        <Banner/>
+        <div className="leftSide">2</div>
+        <Cuerpo />
+        <div className="rightSide">4</div>
+        <Footer />
+    </div>
   )
 }
 
